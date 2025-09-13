@@ -1,0 +1,43 @@
+{
+  "name": "bounce-kingdom-ghana",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "server": "node server.js",
+    "dev:server": "nodemon server.js",
+    "test:db": "node test-mongodb.cjs",
+    "check:db": "node check-db.cjs",
+    "init:db": "node init-db.cjs",
+    "debug": "node debug-app.cjs",
+    "test:products": "node test-products.cjs",
+    "test:booking": "node test-booking-service.js",
+    "test:booking-create": "node test-booking-creation.js",
+    "debug:booking": "node debug-booking.js",
+    "test:product-data": "node test-product-data.js",
+    "test:db-connection": "node test-db-connection.js",
+    "create-admin": "node createAdminUser.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.1",
+    "node-fetch": "^3.3.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "nodemon": "^3.1.10",
+    "vite": "^7.1.5"
+  }
+}
